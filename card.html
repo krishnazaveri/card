@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+</head>
+<body>
+    <style>
+        * {box-sizing: border-box;}
+        .main {
+            height: 300px;
+            width: 500px;
+            background: black;
+           
+            position: relative;  
+            z-index: 0;  
+
+        }
+
+        .box {
+
+            height: 150px;
+            width: 300px;
+             background: rgba(0, 0, 0, .50); 
+            /* background: grey; */
+            margin: 50px;
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            z-index: 1;
+            
+            backdrop-filter: blur(10px); 
+            border: 2px solid;
+            
+            border-image: linear-gradient(red,purple) stretch 5%;
+            
+            
+        }
+
+        .box h1 {
+
+            color: white;
+            text-align: center  ;
+        }
+
+        .circle {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: linear-gradient(purple, pink);
+            position: absolute;
+            top: 20px ;
+            right: 50px;
+            z-index: -1;
+        }
+        .circle1 {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background: linear-gradient(red, orange);
+            position: absolute;
+            bottom: 15px ;
+            left: 40px;
+            z-index: -1;
+        }
+
+        .circle2 {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background: linear-gradient(lightblue, darkblue);
+            position: absolute;
+            top: 55px ;
+            left: 175px;
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+<body>
+
+  <div class="main"> 
+    <div class="box">
+
+        <h1>Krishna</h1>
+    </div>
+    <div class="circle"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </div>
+   
+    
+    
+</body>
+</html>
